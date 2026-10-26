@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Security</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      color: #1c1e21;
+    }
+
+    header {
+      background: #1877f2;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: 35px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px #00000015;
+      text-align: center;
+    }
+
+    .logo {
+      color: #1877f2;
+      font-size: 42px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #1877f2;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #166fe5;
+    }
+
+    .security {
+      margin-top: 25px;
+      padding: 15px;
+      background: #e7f3ff;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #606770;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Centre de sécurité</h1>
+    <p>Accède à Facebook en toute sécurité</p>
+  </header>
+
+  <main class="container">
+    <div class="logo">f</div>
+
+    <h2>Bienvenue</h2>
+
+    <p>
+      Ouvre Facebook depuis son site officiel.
+      Protège tes informations personnelles
+      et reste vigilant face aux faux sites.
+    </p>
+
+    <a
+      class="btn"
+      href="https://www.facebook.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Ouvrir Facebook
+    </a>
+
+    <button class="btn" onclick="showTips()">
+      Conseils de sécurité
+    </button>
+
+    <div class="security" id="tips" hidden>
+      <h3>Protège ton compte</h3>
+      <p>✓ Utilise un mot de passe unique.</p>
+      <p>✓ Active l'authentification à deux facteurs.</p>
+      <p>✓ Ne partage jamais tes codes de vérification.</p>
+      <p>✓ Vérifie l'adresse du site avant de te connecter.</p>
+    </div>
+  </main>
+
+  <footer>
+    Site indépendant à but éducatif.
+    Non affilié à Meta ou Facebook.
+  </footer>
+
+  <script>
+    function showTips() {
+      const tips = document.getElementById("tips");
+      tips.hidden = !tips.hidden;
+    }
+  </script>
+</body>
+</html>
